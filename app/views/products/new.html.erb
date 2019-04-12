@@ -16,7 +16,8 @@
 
 <div id="productResult">
   <h2 id="ProductName"></h2>
-  <p id="ProductPrice"></p>
+  <span id="ProductPrice"></span>
+  <p id="productDescription"></p>
 </div>
 
 <script type="text/javascript" charset="utf-8">
@@ -33,6 +34,7 @@
         var product = data;
         $("#productName").text(product["name"]);
         $("#productPrice").text(product["price"]);
+        $("#productDescription").text(product["description"]);
       });
     });
   });
